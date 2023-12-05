@@ -20,5 +20,4 @@ jobs:
       - name: Coveralls
         uses: coverallsapp/github-action@v2
         env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COVERALLS_DEBUG: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
