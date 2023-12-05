@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "c8 --reporter=lcov mocha && cat ./coverage/lcov.info | coveralls"
+    "test": "c8 --reporter=lcov mocha"
   },
   "author": "",
   "license": "MIT",
