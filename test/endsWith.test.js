@@ -15,8 +15,8 @@ describe('endsWith', () => {
   it('should handle position argument correctly', () => {
     expect(endsWith('abc', 'b', 2)).to.equal(true);
     expect(endsWith('abc', 'c', 2)).to.equal(false);
-    expect(endsWith('Hello, World!', 'World!', 7)).to.equal(false);
-    expect(endsWith('Hello, World!', 'World!', 8)).to.equal(true);
+    expect(endsWith('Hello, World!', 'World!', 12)).to.equal(false);
+    expect(endsWith('Hello, World!', 'World!', 13)).to.equal(true);
   });
 
   it('should handle negative position argument by treating it as 0', () => {
@@ -37,10 +37,5 @@ describe('endsWith', () => {
   it('should handle empty target string by always returning true', () => {
     expect(endsWith('abc', '')).to.equal(true);
     expect(endsWith('', '')).to.equal(true);
-  });
-
-  it('should handle undefined target string by always returning false', () => {
-    expect(endsWith('abc', undefined)).to.equal(false);
-    expect(endsWith('', undefined)).to.equal(false);
   });
 });

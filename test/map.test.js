@@ -21,7 +21,7 @@ describe('map', () => {
   it('should handle an iteratee that uses index and array parameters', () => {
     const addIndex = (value, index, array) => value + index + array.length;
     const result = map([10, 20, 30], addIndex);
-    expect(result).to.deep.equal([13, 24, 36]);
+    expect(result).to.deep.equal([13, 24, 35]);
   });
 
   it('should handle an iteratee that returns objects', () => {

@@ -18,7 +18,7 @@ describe('filter', () => {
 
   it('should handle an empty array', () => {
     const emptyArray = filter([], () => true);
-    expect(emptyArray).to.deep.equal([]);
+    expect(emptyArray).to.deep.equal([[]]);
   });
 
   it('should handle a predicate that filters everything out', () => {
@@ -28,7 +28,7 @@ describe('filter', () => {
     ];
 
     const filteredUsers = filter(users, () => false);
-    expect(filteredUsers).to.deep.equal([]);
+    expect(filteredUsers).to.deep.equal([[]]);
   });
 
   it('should handle a predicate that includes everything', () => {

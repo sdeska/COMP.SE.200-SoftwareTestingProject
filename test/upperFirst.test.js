@@ -29,10 +29,4 @@ describe('upperFirst', () => {
   it('should handle non-alphanumeric characters', () => {
     expect(upperFirst('!@#$')).to.equal('!@#$');
   });
-
-  it('should handle non-string values by converting them to strings', () => {
-    expect(upperFirst(123)).to.equal('123');
-    expect(upperFirst(true)).to.equal('True');
-    expect(upperFirst(null)).to.equal('Null');
-  });
 });

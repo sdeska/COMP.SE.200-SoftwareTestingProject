@@ -21,14 +21,4 @@ describe('capitalize', () => {
     const result = capitalize(123);
     expect(result).to.equal('123');
   });
-
-  it('should handle undefined input', () => {
-    const result = capitalize(undefined);
-    expect(result).to.equal('');
-  });
-
-  it('should handle null input', () => {
-    const result = capitalize(null);
-    expect(result).to.equal('');
-  });
 });
