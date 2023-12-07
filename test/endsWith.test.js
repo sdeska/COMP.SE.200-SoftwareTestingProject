@@ -19,11 +19,6 @@ describe('endsWith', () => {
     expect(endsWith('Hello, World!', 'World!', 13)).to.equal(true);
   });
 
-  // it('should handle negative position argument by treating it as 0', () => {
-  //   expect(endsWith('abc', 'c', -1)).to.equal(true);
-  //   expect(endsWith('Hello, World!', 'World!', -5)).to.equal(true);
-  // });
-
   it('should handle position argument greater than string length by treating it as string length', () => {
     expect(endsWith('abc', 'c', 5)).to.equal(true);
     expect(endsWith('Hello, World!', 'World!', 20)).to.equal(true);
