@@ -7,6 +7,12 @@ describe('clamp', () => {
   //   expect(clamp(10, -5, 5)).to.equal(5);
   // });
 
+  // it('should not change a number already in the limits', () => {
+  //   expect(clamp(5, 2, 6)).to.equal(5);
+  //   expect(clamp(2, 0, 2)).to.equal(2);
+  //   expect(clamp(-1, -1, 4)).to.equal(5);
+  // });
+
   it('should handle lower and upper bounds being equal', () => {
     expect(clamp(3, 3, 3)).to.equal(3);
   });
