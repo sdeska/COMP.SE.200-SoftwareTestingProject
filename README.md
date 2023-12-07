@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/sdeska/COMP.SE.200-SoftwareTestingProject/badge.svg?branch=main)](https://coveralls.io/github/sdeska/COMP.SE.200-SoftwareTestingProject?branch=main)
+
 
 # Student template
 
